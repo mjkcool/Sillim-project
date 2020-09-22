@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- 파비콘 설정 -->
+    <title>신림먹방특공대</title>
+
+    <style>
+        body{
+            padding: 5%;
+            background-color: rgb(218, 144, 32);
+            margin: 0;
+        }
+
+        #divtop{
+            width: 100%;
+            max-width: 900px;
+            padding: 0;
+            position: relative;
+        }
+        #title{
+            width:100%;
+            margin-bottom: 1vw;
+        }
+        #descrip{
+            width:100%;
+            max-width: 900px;
+        }
+
+        #stationimg{
+            height: 100%;
+            filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.473));
+        }
+        
+
+        #divbtn{
+            height: 60%;
+            text-align: right;
+            position: fixed; z-index: 2;
+            bottom: 0; right: 5%;
+        }
+        #divbtn span img{
+            float: left;
+            margin: 5vw;
+            height: 15vmin;
+        }
+
+
+        #devinfo{
+            bottom: 5%; left: 5%; 
+            position: fixed; z-index: 3;
+            height: 10vmin;
+        }
+        #devinfo span{
+            padding: 10px;
+            line-height: 10vmin;
+            font-size: 3vmin;
+        }
+        #devinfo img{
+            height:100%;
+            float: left;
+        }
+        .over{
+            filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.2));
+        }
+
+
+        
+    </style>
+    <script type='text/javascript'>
+        $( document ). ready(function() {
+           
+            $('#go').mouseenter(function(){
+                $('#go').addClass('over');
+            });
+
+            $('#go').mouseleave(function(){
+                $('#go').removeClass('over');
+            });
+
+            $('#go').click( function() {
+                location.href = "#";
+            } );
+
+        
+        });
+        
+    </script>
+</head>
+
+<body>
+    <div id='divtop'>
+        <image id='title' src="신림먹방특공대/로고3.png"/>
+        <image id='descrip' src="신림먹방특공대/문구.png"/>
+    </div>
+
+    <div id='divbtn'>
+        <span>
+            <image id="go" src="신림먹방특공대/출발.png"/> 
+        </span>
+        <image id='stationimg' src="신림먹방특공대/신림.png"/>
+        
+    </div>
+    <div id='devinfo'>
+        <image src="신림먹방특공대/github.png"/>
+        <span>개발자 김민정(18)/우르락끼!</span>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- 파비콘 설정 -->
+    <title>신림먹방특공대</title>
+    
+    <style> 
+        * {padding: 0; margin: 0;}
+        body{ background-color: black; overflow: hidden;}
+        #logo {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+		}
+        .animate__animated.animate__flipInY {
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            animation-delay: .5s;
+            animation-duration: 1.5s;
+        }
+    </style>
+
+</head>
+<body onload="javascript:window_onload()">
+
+    <div id="logo" width="40%">
+        <image src="신림먹방특공대/로고2.png" class="animate__animated animate__flipInY"/>
+    </div>
+    <script>
+        function window_onload(){
+            setTimeout(function(){
+                location.replace("main.html");
+            },4000)  // 5초후 go_url() 함수를 호출한다.
+        }
+
+
+    </script>
+
+</body>
+</html>
