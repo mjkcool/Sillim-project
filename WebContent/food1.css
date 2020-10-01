@@ -10,8 +10,7 @@ table{
     text-align: center;
 }
 
-tr{
-} 
+
 #gobtn{
     height: 15vmin;
     cursor: pointer;
@@ -19,16 +18,45 @@ tr{
 td{
     background-color: darkcyan;
 }
+img{
+    max-width: 100%;
+    height: outo;
+}
 
+#storeImage{
+    width: 45%;
+    float:left;
+    margin: 0.5%;
+    margin-left: 4.5%;
+}
+
+#map{
+    width: 45%;
+    float:left;
+    margin: 0.5%;
+    margin-right: 4.5%;
+}
 
 #float{
     margin: 2%;
 }
-#float *{
-    
-    width: 45%;
-}
 
 #eateryinfo{
     text-align: center;
+}
+
+@media ( max-width: 480px ){
+    #float{
+        margin: none;
+    }
+    #storeImage{
+        width: auto;
+        float: none;
+        margin-left: 0;
+    }
+    #map{
+        width: auto;
+        float: none;
+        margin-right: 0;
+    }
 }
