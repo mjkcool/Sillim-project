@@ -29,6 +29,10 @@ img{
     margin: 0.5%;
     margin-left: 4.5%;
 }
+#foodImage{
+    width: 45%;
+    margin: 0.5%;
+}
 
 #map{
     width: 45%;
@@ -49,14 +53,21 @@ img{
     #float{
         margin: none;
     }
+    table{
+    	padding: 0;
+    }
     #storeImage{
         width: auto;
         float: none;
-        margin-left: 0;
+        margin: 0;
     }
     #map{
         width: auto;
         float: none;
-        margin-right: 0;
+        margin: 0;
+    }
+    #foodImage{
+    	width: auto;
+        float: none;
     }
 }
